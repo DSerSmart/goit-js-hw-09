@@ -28,7 +28,8 @@ function createPromise(position, delay) {
 }
 
 btnCreatePromise.addEventListener('click', e => {
-  e.preventDefault();
+  e.preventDefault(); //preventDefault отмена собития по умолчанию
+
   let firstDelay = Number(delay.value);
   let delayStep = Number(step.value);
   for (let i = 0; i < amount.value; i++) {
